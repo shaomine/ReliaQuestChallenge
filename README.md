@@ -2,7 +2,6 @@
 11
 
 ### Implemented EndPoints
-Java source version = 11.
 
 getAllEmployees()
 
