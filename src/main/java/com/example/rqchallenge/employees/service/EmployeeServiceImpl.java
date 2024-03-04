@@ -161,8 +161,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private String parseRequestBody(Map<String, Object> input) {
         checkSanitization(input);
         try {
-            String reqBody = JacksonMapper.getObjectMapper().writeValueAsString(input);
-            return reqBody;
+            return JacksonMapper.getObjectMapper().writeValueAsString(input);
         } catch (JsonProcessingException je) {
             throw new RuntimeException(je.getMessage());
         }
