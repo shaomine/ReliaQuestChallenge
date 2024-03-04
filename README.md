@@ -1,4 +1,4 @@
-### Endpoints to implement
+### Implemented EndPoints
 
 getAllEmployees()
 
