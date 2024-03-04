@@ -124,7 +124,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee createEmployee(Map<String, Object> input) {
         try {
             String url = resourceBaseurl + "/api/v1/create";
-            //String url = "http://localhost:8081/create";
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
             String requestBody = parseRequestBody(input);
